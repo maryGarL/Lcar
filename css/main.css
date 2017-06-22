@@ -1,0 +1,263 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.white{
+  background-color: white;
+  color:black;
+  padding: 0 20px;
+}
+
+ul>li>a{
+  text-decoration: none;
+  color:black;
+}
+
+section#viaja{
+  background-color: skyblue;
+  background-image: url("../assets/img/taxi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 89vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.navbar-toggle>.icon-bar{
+  background-color:black;
+}
+
+.naranja{
+  background-color: #F7B617;
+  color:white;
+}
+
+.padding{
+  padding-left: 15px;
+}
+
+.bar{
+  display:inline-block;
+  border-bottom: 1px solid white;
+  height: 0.5vh;
+  width:30%;
+  margin:1px 30px;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.padmen{
+  padding-left: -15px;
+}
+
+section#conduce,section#info,section#tarifario,footer{
+  height: 100vh;
+
+}
+
+div.linea{
+  border:1px solid white;
+  border-left: 0;
+  padding:40px 0px;
+  position: relative;
+  top:15vh;
+  left: -112px;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+
+section#conduce{
+  background-image: url("../assets/img/conduce.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.os{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.rale{
+  font-family: 'Raleway', sans-serif;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.marginb{
+  margin-bottom: 30px;
+}
+
+.overlay{
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+  color:white;
+  padding-top: 20rem;
+  width: 43.75%;
+}
+
+input[type="text"]{
+  background-color: transparent;
+  outline: none;
+  border:1px solid white;
+  margin-bottom: 30px;
+  width:100%;
+}
+
+input[type="text"]::-webkit-input-placeholder{
+  color:white;
+}
+
+div.tarifa{
+  height: 100vh;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#map{
+  border:1px solid white;
+  width:400px;
+  height: 400px;
+  padding: 10px;
+  }
+
+.abs-map{
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.relative{
+  position:relative;
+}
+
+.tarifa{
+  font-size: 2rem;
+}
+
+.none{
+  display:none;
+}
+
+footer{
+  background-color: #2B2B2B;
+  padding-top: 10vh;
+}
+
+ul>li{
+  list-style: none;
+  color:white;
+}
+
+.div1,.div2,.div3,.div4{
+  height: 60vh;
+  margin-top:10px;
+}
+
+.div1{
+  display:flex;
+  align-items: flex-end;
+}
+
+.div2>ul, .div3>ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+.div4{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.marg{
+  margin-top:10px;
+  color:white;
+}
+
+.lineas{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: 2vh;
+  padding-bottom: 10vh;
+}
+
+/*se visualiza bien en 480x800*/
+
+@media (max-width:768px) {
+  div.linea{
+    border:1px solid white;
+    padding:0;
+    left:5px;
+  }
+
+  .naranja1{
+    position: relative;
+    left: 6.4%;
+  }
+  .overlay{
+    position: absolute;
+    width: 96vw;
+  }
+  div.lineas{
+    height:70vh;
+  }
+
+  .div1{
+    justify-content: flex-start;
+    height: 10vh;
+    position:relative;
+    left:220px;
+  }
+
+  .div2{
+    position:relative;
+    left:-180px;
+  }
+
+  .div4{
+    position:relative;
+    top:-100%;
+    left:50%;
+  }
+
+  p.marg{
+    height: 40px;
+    position:relative;
+    left:-80px;
+  }
+
+  .peq{
+    height: 70vh;
+  }
+
+  a.navbar-brand>img{
+    position:relative;
+    left:140px;
+  }
+
+  button.navbar-toggle{
+    position:relative;
+    left:-420px;
+  }
+
+  .padmen{
+    position:absolute;
+    padding-left: 19px;
+  }
+
+
+ }
